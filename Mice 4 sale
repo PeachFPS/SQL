@@ -1,0 +1,25 @@
+CREATE TABLE mice (id INTEGER PRIMARY KEY, name TEXT, price INTEGER, weight INTEGER, release_year INTEGER, size TEXT);
+INSERT INTO mice VALUES (1, "GPro_wireless", 150, 60, 2001, 5);
+INSERT INTO mice VALUES (2, "blue mouse", 250, 66, 2015, 8);
+INSERT INTO mice VALUES (3, "bpro_wireless", 130, 66, 2002, 6);
+INSERT INTO mice VALUES (4, "GPro_wireless2", 151, 60, 2003, 5);
+INSERT INTO mice VALUES (5, "GPro_wireless3", 152, 60, 2003, 6);
+INSERT INTO mice VALUES (6, "GPro_wireless4", 169, 60, 2004, 5);
+INSERT INTO mice VALUES (7, "GPro_wireled", 155, 60, 2007, 8);
+INSERT INTO mice VALUES (8, "green_mouse", 200, 70, 2020, 6);
+INSERT INTO mice VALUES (9, "G_wire", 159, 60, 2010, 5);
+INSERT INTO mice VALUES (10, "LAMZU", 70, 60, 2023, 5);
+INSERT INTO mice VALUES (11, "Final_mouse", 300, 60, 2020, 6);
+INSERT INTO mice VALUES (12, "razer chroma", 220, 67, 2022, 5);
+INSERT INTO mice VALUES (13, "Razer chroma2", 220, 68, 2023, 5);
+INSERT INTO mice VALUES (14, "RazerMouse3", 500, 60, 2023, 5);
+INSERT INTO mice VALUES (15, "GPro_wireless57", 375, 60, 2024, 5);
+SELECT * FROM mice ORDER BY price;
+SELECT * FROM mice WHERE release_year > 2007
+
+--display database ordered by price
+SELECT * FROM mice
+ORDER BY price
+
+--display database ordered by release year > 2007
+SELECT * FROM mice WHERE release_year > 2007
